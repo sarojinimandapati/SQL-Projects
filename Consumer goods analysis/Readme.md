@@ -83,8 +83,6 @@ products within a database or system.
 
 #### 1. Provide the list of markets in which customer "Atliq Exclusive" operates its business in the APAC region.
 
--> select  market from dim_customer where customer="Atliq Exclusive" and region="APAC";
-
 
 <img width="120" alt="Screenshot 2023-05-16 194520" src="https://github.com/sarojinimandapati/SQL-Projects/assets/124454596/d163ff31-8218-4fe2-bfca-6a27272bb203">  
 
@@ -93,9 +91,9 @@ The above result set is the list of markets where Atliq is exclusive in the APAC
 #### 2. What is the percentage of unique product increase in 2021 vs. 2020? The final output contains these fields,unique_products_2020unique_products_2021 percentage_chg.
 
 <img width="295" alt="image" src="https://github.com/sarojinimandapati/SQL-Projects/assets/124454596/0cc3c4db-8f91-4080-b365-4c46e4586c45">
+* The percentage change of products from 2020 to 2021 is 36.3 %
 
 #### 3. Provide a report with all the unique product counts for each segment and sort them in descending order of product counts. The final output contains2 fields, segment product_count
-
 
 
 <img width="156" alt="image" src="https://github.com/sarojinimandapati/SQL-Projects/assets/124454596/e4026efa-cedf-4426-9676-69c5ca592acd">
@@ -104,25 +102,40 @@ The above result set is the list of markets where Atliq is exclusive in the APAC
 
 <img width="313" alt="image" src="https://github.com/sarojinimandapati/SQL-Projects/assets/124454596/2d1a33c6-9676-49b6-afe2-367e4eb48b3a">
 
+* Accesories is the most increased unique_products from 2020 to 2021
+* Networking and Storage has least product growth than other segments
+
 #### 5. Get the products that have the highest and lowest manufacturing costs. The final output should contain these fields,product_code product manufacturing_cost
 
 <img width="274" alt="image" src="https://github.com/sarojinimandapati/SQL-Projects/assets/124454596/c2dac960-0035-4a41-8424-7697445c9fce">
 
-#### 6. Generate a report which contains the top 5 customers who received an average high pre_invoice_discount_pct for the fiscal year 2021 and in the Indian market. The final output contains these fields, customer_code customer average_discount_percentage
+* AQ Home Allin1 gen2 has the highest manufaturing cost
+* AQ Master wired x1 ms has the lowest manufaturing cost
+
+#### 6. Generate a report which contains the top 5 customers who received an average high pre_invoice_discount_pct for the fiscal year 2021 and in the Indian market. The final output contains these fields, customer_code, customer ,average_discount_percentage
 
 <img width="261" alt="image" src="https://github.com/sarojinimandapati/SQL-Projects/assets/124454596/23180311-7134-43a1-bb7c-d06b1d25043d">
 
-####  7. Get the complete report of the Gross sales amount for the customer “Atliq Exclusive” for each month. This analysis helps to get an idea of low and high-performing months and take strategic decisions. The final report contains these columns:Month ,Year ,Gross sales Amount 
+* The largest pre-invoice discount was given to the flipcart customer
+* The lowest pre-invoice discount was given to Amazon customer
+ 
+####  7. Get the complete report of the Gross sales amount for the customer “Atliq Exclusive” for each month. This analysis helps to get an idea of low and high-performing months and take strategic decisions. The final report contains these columns:Month,Year ,Gross sales Amount 
 
-<img width="331" alt="image" src="https://github.com/sarojinimandapati/SQL-Projects/assets/124454596/9c2d0d4d-2b95-44d3-80fd-7bd790e6cd14">
+<img width="313" alt="image" src="https://github.com/sarojinimandapati/SQL-Projects/assets/124454596/a8907626-cea4-4d6b-ad74-4c7ec8d9051a">
+
+* In both fiscal_year November month has the highest gross sales
+* In both years April has the lowest gross sales
+
 
 #### 8. In which quarter of 2020, got the maximum total_sold_quantity? The final output contains these fields sorted by the total_sold_quantity,Quarter total_sold_quantity.
 
 <img width="160" alt="image" src="https://github.com/sarojinimandapati/SQL-Projects/assets/124454596/76a87876-692d-41dd-a8af-facae7ce0075">
 
-#### 9. Which channel helped to bring more gross sales in the fiscal year 2021 and the percentage of contribution? The final output contains these fields, channel gross_sales_mln ,percentage.
+
+#### 9. Which channel helped to bring more gross sales in the fiscal year 2021 and the percentage of contribution? The final output contains these fields, channel gross_sales_mln,percentage.
 
 <img width="210" alt="image" src="https://github.com/sarojinimandapati/SQL-Projects/assets/124454596/b750e825-81bc-441d-a45c-c9e8e6b854c9">
+
 
 #### 10.Get the Top 3 products in each division that have a high total_sold_quantity in the fiscal_year 2021? The final output contains these  fields,division product_code, product ,total_sold_quantity, rank_order.
 
